@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>HOME</ul>
+        <ul>ORGANIZACION</ul>
+        <ul>EQUIPO DE TRABAJO</ul>
+    </nav>
+    <main>
+    <header>
+        <h1>PORTAL DE LA ESCUELA DE INGENIERIA DE SISTEMAS</h1>
+    </header>
+    <main>
+        <div>
+           <h2>REGISTRO DE ALUMNOS</h2>
+           <form>    
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="ej. tevezn" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo letras" required>
+            <br>
+            <label for="ape-paterno">Apellido paterno:</label>
+            <input type="text" name="ape-paterno" placeholder="ej. lopez" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo letras" required>
+            <br>
+            <label for="ape-materno">Apellido materno:</label>
+            <input type="text" name="ape-materno" placeholder="ej. garcia" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo letras" required>
+            <br>
+            <label for="edad">edad:</label>
+            <input type="number" name="edad" placeholder="ej. 18">
+            <br>
+            <label for="email">email:</label>
+            <input type="email" name="email" placeholder="ej. elecrtonico">
+            <br>
+            <p><strong>Sexo:</strong></p>
+            <label>
+                <input type="radio" name="sexo" value="masculino"> Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="femenino"> Femenino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="todos los"> Otro
+            </label>
+            <br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <div>
+           <h2>LISTA DE PRODUCTOS</h2>
+           <table border="3" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>PRODUCTO</th>
+                    <th>DESCRIPCION</th>
+                    <th>PRECIO</th>
+                </tr>
+            </thead>
+            <tfoul>
+            <tbody>
+                <tr>
+                    <td align="right">total</td>
+                    <td colspan="3"></td>
+                    <td>s/. 4,800.00</td>
+                </tr>
+            </tbody>
+                    <td>1</td>
+                    <td>TELEVISOR DE 42 PUL</td>
+                    <td>TELEVISOR SMART LG</td>
+                    <td>s/. 1,500.00</td>
+                </tr>
+    
+                <tr>
+                    <td>2</td>
+                    <td>TAVADORA DE 16 KG.</td>
+                    <td>LAVADORA SMART SAMSUNG</td>
+                    <td>s/. 2,500.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>CAFETERA</td>
+                    <td>CAFETERA MARCA OSTER</td>
+                    <td> s/. 500.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>MICRO ONDAS</td>
+                    <td>CRICROONDAS MARCA OSTER</td>
+                    <td>s/. 300.00</td>   
+                </tr>
+            </tfoul>
+           </table>
+        </div>
+
+ <div>
+  <h2>HORARIO DE CLASES TEVEZN</h2>
+  <table border="3" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>HORA</th>
+        <th>LUNES</th>
+        <th>MARTES</th>
+        <th>MIERCOLES</th>
+        <th>JUEVES</th>
+        <th>VIERNES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2:00 - 3:00 PM</td>
+        <td rowspan="3" style="background-color: #b7f0b1;">SI312 - Desarrollo de Aplicaciones Web I</td>
+        <td>  </td>
+        <td rowspan="3">SI310 - Ingeniería de Software</td>
+        <td>  </td>
+        <td>  </td>
+      </tr>
+      <tr>
+        <td>3:00 - 4:00 PM</td>
+        <td rowspan="2">SI310 - Ingeniería de Software</td>
+        <td rowspan="2">SI312 - Desarrollo de Aplicaciones Web I</td>
+        <td>  </td>
+      </tr>
+      <tr>
+        <td>4:00 - 5:00 PM</td>
+    
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>5:00 - 6:00 PM</td>
+        <td rowspan="2">SI309 - Arquitectura del Computador</td>
+        <td></td>
+        <td></td>
+        <td rowspan="2">SI308 - Gestión Financiera y de Procesos</td>
+        <td rowspan="2">SI313 - Fundamentos de Redes</td>
+      </tr>
+      <tr>
+        <td>6:00 - 7:00 PM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>7:00 - 8:00 PM</td>
+        <td rowspan="2">SI313 - Fundamentos de Redes</td>
+        <td rowspan="2">SI308 - Gestión Financiera y de Procesos</td>
+        <td rowspan="2">SI311 - Big Data</td>
+        <td rowspan="2">SI311 - Big Data</td>
+        <td rowspan="2">SI309 - Arquitectura del Computador</td>
+      </tr>
+      <tr>
+        <td>8:00 - 9:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+    </main>
+    </body>
+    </html>
+            
