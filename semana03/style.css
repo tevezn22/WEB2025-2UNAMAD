@@ -42,6 +42,7 @@ h2{
 .docentes{
     font-size: 20px;
     background-color: rgb(88, 193, 193);
+    font-family: 'Courier New', Courier, monospace;
     padding: 20px;
     margin: 5px;
     text-align: justify;
@@ -58,6 +59,7 @@ h2{
     border: 1px solid black;
     text-align: justify;
     border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
   
 }
 
@@ -69,6 +71,7 @@ h2{
     background-color: bisque;
     border:1px solid black;
     border-radius: 15px;
+    
  }
 
 section{
