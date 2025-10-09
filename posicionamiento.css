@@ -1,0 +1,21 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding:  0px;       
+}
+
+.absolute{
+    position:absolute;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(6, 7, 64); 
+}
+
+.relative{
+    position:relative;
+    width: 500px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+

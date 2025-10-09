@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.general {
+    width: 500 px;
+    height: 200 px;
+    font-size: 1em;
+    background-color: aquamarine;
+}
+
+.px{
+    width: 500px;
+    height: 200px;
+    background-color: azure;
+}
+
+.vm{
+    width: 30vw;
+    height: 30vh;
+    background-color: yellow;
+}
+
+.em{
+    width: 20em;
+    height: 20em;
+    background-color: red;
+}
+
+.rem{
+    width: 10em;
+    height: 10em;
+    background-color: green;
+}
+
+.por{
+    width: 50%;
+    background-color: black;
+}
