@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/*flex inicio*/
+.flex-inicio{
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+}
+.flex-inicio div{
+    background-color: purple;
+    
+}
+.flex-inicio div:first-child{
+    background-color: orange;
+    
+}
+.flex-inicio div:last-child{
+    background-color: brown;
+    
+}
+
+/*flex final*/
+.flex-final{
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.flex-final div{
+    background-color: purple;
+  
+
+}
+.flex-final div:first-child{
+    background-color: orange;
+   
+}
+.flex-final div:last-child{
+    background-color: brown;
+   
+}
+
+/*flex central*/
+
+.flex-central{
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex-central div{
+    background-color: purple;
+    
+}
+.flex-central div:first-child{
+    background-color: orange;
+    
+}
+.flex-central div:last-child{
+    background-color: brown;
+   
+}
+
+/*flex between*/
+
+.flex-between{
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex-between div{
+    background-color: purple;
+   
+}
+.flex-between div:first-child{
+    background-color: orange;
+    
+}
+.flex-between div:last-child{
+    background-color: brown;
+   
+}
+
+/*flex around*/
+
+.flex-around{
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.flex-around div{
+    background-color: purple;
+    
+}
+.flex-around div:first-child{
+    background-color: orange;
+    
+}
+.flex-around div:last-child{
+    background-color: brown;
+   
+}
+
+/*flex evenlyn*/
+
+.flex-evenly{
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.flex-evenly div{
+    background-color: purple;
+    
+}
+.flex-evenly div:first-child{
+    background-color: orange;
+    
+}
+.flex-evenly div:last-child{
+    background-color: brown;
+    
+}

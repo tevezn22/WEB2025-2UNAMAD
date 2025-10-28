@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    display: flex;
+    width: 300px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.box div{
+    width: 300px;
+    background-color: rgb(0, 128, 51);
+    font-size: 58px;
+}
+
+.box div:first-child{
+    background-color: rgb(180, 246, 27);
+    flex-shrink: 1;
+}
+
+.box div:last-child{
+    background-color: rgb(180, 246, 27);
+    flex-grow: 1;
+}
