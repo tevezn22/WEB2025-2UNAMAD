@@ -14,7 +14,7 @@
     width: 100%;
 }
 .flex-inicio div{
-    background-color: purple;
+    background-color: rgb(21, 223, 48);
     
 }
 .flex-inicio div:first-child{
@@ -35,8 +35,7 @@
 }
 
 .flex-final div{
-    background-color: purple;
-  
+    background-color: rgb(21, 223, 48);
 
 }
 .flex-final div:first-child{
@@ -58,7 +57,7 @@
 }
 
 .flex-central div{
-    background-color: purple;
+    background-color:  rgb(21, 223, 48);
     
 }
 .flex-central div:first-child{
@@ -80,8 +79,7 @@
 }
 
 .flex-between div{
-    background-color: purple;
-   
+    background-color: rgb(21, 223, 48);
 }
 .flex-between div:first-child{
     background-color: orange;
@@ -102,8 +100,7 @@
 }
 
 .flex-around div{
-    background-color: purple;
-    
+    background-color: rgb(21, 223, 48);
 }
 .flex-around div:first-child{
     background-color: orange;
@@ -124,7 +121,7 @@
 }
 
 .flex-evenly div{
-    background-color: purple;
+    background-color:  rgb(21, 223, 48);
     
 }
 .flex-evenly div:first-child{

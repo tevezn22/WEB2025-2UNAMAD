@@ -1,0 +1,19 @@
+*{
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+}
+
+.header{
+background: aquamarine;
+color: white;
+font-weight: bold;
+padding: 2px;
+}
+
+@media (max-width: 600px) {
+.header {
+    background-color: rgb(150, 220, 38);
+    color: black;
+}
+}
