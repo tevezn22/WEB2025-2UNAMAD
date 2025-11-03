@@ -1,0 +1,30 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.titulo{
+color: white;
+background: rgb(95, 175, 149);
+transition-property: color;
+transition-duration: 0.5s;
+padding: 10px;
+transition-timing-function: ease;
+transition-delay: 1;
+}
+
+.titulo:hover{
+    color: red;
+}
+
+div{
+    width: 100px;
+    height: 200px;
+    background: rgb(43, 137, 177);
+    transition-duration: darkcyan;
+}
+
+div:hover{
+    background: rgb(14, 82, 49);
+}

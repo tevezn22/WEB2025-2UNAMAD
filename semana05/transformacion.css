@@ -1,0 +1,93 @@
+/* *{
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+}
+
+.titulo{
+animation-duration: 2s;
+animation-name: animacionTitulo;
+}
+
+@keyframes animacionTitulo {
+    from{
+        color: white;
+        background: darkcyan;
+    }
+to{
+color: blue;
+background: yellow;
+font-size: 50px;
+}
+} */
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(14, 127, 22);
+    margin: 10px;
+    color: rgb(88, 4, 4);
+    text-align: center;
+    line-height: 100px;
+    transition: all 1s ease;
+}
+
+&.scale{
+  &:hover{
+    transform: scale(2, 2);
+  }
+}
+
+.scalex{
+  &:hover{
+    transform: scalex(2);
+  }
+}
+
+.scaley{
+  &:hover{
+    transform: scaley(3);
+  }
+}
+
+.rotate{
+  &:hover{
+    transform: rotate(2turn); /*=360deg */
+  }
+}
+
+.rotatex{
+  &:hover{
+    transform: rotatex(1turn);
+  }
+}
+
+.rotatey{
+  &:hover{
+    transform: rotatey(2turn); 
+  }
+}
+
+.rotatez{
+  &:hover{
+    transform: rotatez(1turn); 
+  }
+}
+
+.skew{
+  &:hover{
+    transform: skew(10deg, 10deg); 
+  }
+}
+
+.skewx{
+  &:hover{
+    transform: skewx(30deg); 
+  }
+}
+
+.skewy{
+  &:hover{
+    transform: skewy(30deg);
+  }
+}

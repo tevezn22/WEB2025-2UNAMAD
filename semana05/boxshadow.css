@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #0c0909; 
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.contenedor {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: transparent;
+}
+
+
+.contenedor div {
+  position: absolute;
+  width: 159px;
+  height: 159px;
+  background-color: #010401; 
+  border: 3px solid #00ff6e; 
+  box-shadow: 0 0 15px #00ff6e; /
+}
+
+
+.caja1 {
+  top: 0;
+  left: 0;
+  border-radius: 0 80px 0 80px; 
+}
+
+
+.caja2 {
+  top: 0;
+  right: 0;
+  border-radius: 90px 0 90px 0;
+}
+
+
+.caja3 {
+  bottom: 0;
+  left: 0;
+  border-radius: 80px 0 80px 0;
+}
+
+
+.caja4 {
+  bottom: 0;
+  right: 0;
+  border-radius: 0 90px 0 90px;
+}
