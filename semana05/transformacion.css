@@ -32,7 +32,7 @@ div{
     transition: all 1s ease;
 }
 
-&.scale{
+.scale{
   &:hover{
     transform: scale(2, 2);
   }
@@ -52,7 +52,7 @@ div{
 
 .rotate{
   &:hover{
-    transform: rotate(2turn); /*=360deg */
+    transform: rotate(2turn); 
   }
 }
 
@@ -71,6 +71,24 @@ div{
 .rotatez{
   &:hover{
     transform: rotatez(1turn); 
+  }
+}
+
+.translate {
+  &:hover {
+    transform: translate(100px, 100px);
+  }
+}
+
+.translatex {
+  &:hover {
+    transform: translatex(300px);
+  }
+}
+
+.translatey {
+  &:hover {
+    transform: translatey(200px);
   }
 }
 
