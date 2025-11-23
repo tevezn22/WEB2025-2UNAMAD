@@ -1,0 +1,184 @@
+@import 'variable';
+@import 'mixinns';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-dark;
+  font-family: $font-main;
+  color: $color-white;
+}
+
+.app {
+  @include flex(row);
+  height: 100vh;
+}
+
+
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  background: $color-black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 25px;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .logo img {
+    height: 45px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    li {
+      list-style: none;
+      color: $color-gray;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      span {
+        font-size: 1.1rem;
+      }
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+
+
+
+
+.content {
+  flex: 1;
+  margin-top: 250px;
+  padding: 20px 30px;
+  background: linear-gradient(to bottom, #202020, $color-dark);
+  overflow-y: auto;
+}
+
+
+section {
+  margin-bottom: 40px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+
+  
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+
+  
+ .card {
+  flex: 0 0 160px;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative;   
+
+  
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0); 
+    border-radius: $border-radius;
+    transition: background 0.2s ease;
+    pointer-events: none; 
+  }
+
+  &:hover::after,
+  &:active::after {
+    background: rgba(255, 255, 255, 0.12); 
+  }
+
+
+
+   
+   .play-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    background: $color-green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+    img {
+        width: 55%; 
+        height: auto;
+    }
+  }
+
+ position: relative;
+
+ &:hover .play-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+    
+    &:hover {
+      transform: scale(1.06);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: $border-radius;
+    }
+
+    
+    .title {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: $color-white;
+    }
+
+    .subtitle {
+      font-size: 0.75rem;
+      color: $color-gray;
+    }
+  }
+}

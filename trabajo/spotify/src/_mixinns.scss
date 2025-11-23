@@ -1,0 +1,24 @@
+@import './variable';
+
+@mixin flex($dir, $justify: flex-start, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// 🟩 Mixin Grid Auto para las cards
+@mixin auto-grid($min) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min, 1fr));
+  gap: 1.2rem;
+}
+
+// 🟩 Mixin para imagenes de las cards
+@mixin card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: $border-radius;
+}

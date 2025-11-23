@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  height: 100vh;
+}
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 25px;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.topbar .logo img {
+  height: 45px;
+}
+.topbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 25px;
+}
+.topbar nav ul li {
+  list-style: none;
+  color: #b3b3b3;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.topbar nav ul li span {
+  font-size: 1.1rem;
+}
+.topbar nav ul li:hover {
+  color: #ffffff;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 250px;
+  padding: 20px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#121212));
+  background: linear-gradient(to bottom, #202020, #121212);
+  overflow-y: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+section .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+section .card-list::-webkit-scrollbar {
+  height: 0;
+}
+section .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 160px;
+          flex: 0 0 160px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
+  transition: -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
+  position: relative;
+  position: relative;
+}
+section .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  pointer-events: none;
+}
+section .card:hover::after, section .card:active::after {
+  background: rgba(255, 255, 255, 0.12);
+}
+section .card .play-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  background: #1db954;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+section .card .play-btn img {
+  width: 55%;
+  height: auto;
+}
+section .card:hover .play-btn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+section .card:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+section .card img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+section .card .title {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+section .card .subtitle {
+  font-size: 0.75rem;
+  color: #b3b3b3;
+}
