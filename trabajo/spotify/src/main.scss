@@ -13,12 +13,6 @@ body {
   color: $color-white;
 }
 
-.app {
-  @include flex(row);
-  height: 100vh;
-}
-
-
 
 .topbar {
   width: 100%;
@@ -60,17 +54,15 @@ body {
       &:hover {
         color: $color-white;
       }
+      
     }
   }
 }
 
 
-
-
-
 .content {
   flex: 1;
-  margin-top: 250px;
+  margin-top: 70px;
   padding: 20px 30px;
   background: linear-gradient(to bottom, #202020, $color-dark);
   overflow-y: auto;
