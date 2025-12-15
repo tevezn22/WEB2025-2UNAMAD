@@ -128,8 +128,8 @@ section .card .play-btn {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  width: 45px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
   background: #1db954;
   border-radius: 50%;
   display: -webkit-box;
